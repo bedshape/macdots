@@ -1,4 +1,4 @@
-theme = Afterglow
+theme = Dracula
 
 window-subtitle = working-directory
 shell-integration-features = no-cursor
