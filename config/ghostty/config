@@ -1,5 +1,6 @@
 theme = Afterglow
 
+window-inherit-working-directory = false
 window-subtitle = working-directory
 shell-integration-features = no-cursor
 font-family = "Menlo"

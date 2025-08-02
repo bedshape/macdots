@@ -6,6 +6,7 @@ vim.opt.mouse = "a"
 vim.opt.scrolloff = 14 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.wrap = false
+vim.opt.guicursor = "n-v-c-i:block"
 
 -- statusline
 vim.o.statusline = "%f%m%=%y %B %l:%c %p%%"
@@ -16,3 +17,4 @@ vim.cmd("highlight Normal guibg=NONE")
 vim.cmd("highlight NonText guibg=NONE")
 vim.cmd("highlight LineNr guibg=NONE")
 vim.cmd("highlight CursorLineNr guibg=NONE")
+
