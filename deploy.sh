@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-DOTSHOME="$HOME/bed/dots"
-DOTSCONFIG="$HOME/bed/dots/config"
+DOTSHOME="$HOME/bed/git/dots"
+DOTSCONFIG="$HOME/bed/git/dots/config"
 
 echo "deploying dotfiles"
 
