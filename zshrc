@@ -2,6 +2,7 @@ export PS1="%{%F{9}%}%~ %{%F{11}%}%% %{%f%}"
 # export RPROMPT="%{%F{13}%}[$SHELL]%{%f%}"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export BED="$HOME/bed"
 set -o vi
 
 zstyle ':completion:*' menu select
