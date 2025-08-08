@@ -5,8 +5,8 @@ DOTSCONFIG="$HOME/bed/dots/config"
 
 echo "deploying dotfiles"
 
-ln -sf "$DOTSHOME/zshrc" "$HOME/.zshrc"
-ln -sf "$DOTSHOME/gitconfig" "$HOME/.gitconfig"
+ln -f "$DOTSHOME/zshrc" "$HOME/.zshrc"
+ln -f "$DOTSHOME/gitconfig" "$HOME/.gitconfig"
 
 mkdir -p "$HOME/.config"
 for item in "$DOTSCONFIG"/*; do

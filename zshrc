@@ -39,6 +39,7 @@ alias brewup="brew update && brew upgrade && brew cleanup"
 alias rccp="rclone copy -P"
 alias rclsd="rclone lsd"
 alias rcls="rclone ls"
+alias nmutt="neomutt"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
