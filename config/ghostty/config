@@ -1,15 +1,15 @@
-theme = Afterglow
+theme = GruvboxDark
 
 window-inherit-working-directory = false
 window-subtitle = working-directory
 shell-integration-features = no-cursor
 font-family = "Menlo"
 font-size = 15
-window-padding-x = 7
+window-padding-x = 11
 window-padding-y = 7
 cursor-style = block
-background-opacity = 0.85
-background-blur = true
+background-opacity = 1.00
+background-blur = false
 resize-overlay = never
 
 keybind = cmd+j=goto_split:next

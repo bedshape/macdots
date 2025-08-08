@@ -1,4 +1,5 @@
-export PS1="%{%F{9}%}%~ %{%F{11}%}%% %{%f%}"
+# export PS1="%{%F{9}%}%~ %{%F{11}%}%% %{%f%}"
+export PS1="%{%F{9}%}%~ %{%F{11}%}> %{%f%}"
 # export RPROMPT="%{%F{13}%}[$SHELL]%{%f%}"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
@@ -35,6 +36,9 @@ alias sshdstop="sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist
 alias mountsync="sudo mount -t nfs 10.241.247.2:/mnt/nasraid/sync $HOME/nfs/sync"
 alias mountmedia="sudo mount -t nfs 192.168.1.228:/mnt/nasraid/media $HOME/nfs/media"
 alias brewup="brew update && brew upgrade && brew cleanup"
+alias rccp="rclone copy -P"
+alias rclsd="rclone lsd"
+alias rcls="rclone ls"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
