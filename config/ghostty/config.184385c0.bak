@@ -1,4 +1,4 @@
-theme = Afterglow
+theme = GruvboxDark
 
 window-inherit-working-directory = false
 window-subtitle = working-directory
@@ -8,8 +8,8 @@ font-size = 15
 window-padding-x = 11
 window-padding-y = 7
 cursor-style = block
-background-opacity = 0.90
-background-blur = true
+background-opacity = 1.00
+background-blur = false
 resize-overlay = never
 
 keybind = cmd+j=goto_split:next
@@ -21,4 +21,3 @@ keybind = cmd+ctrl+l=goto_split:right
 keybind = cmd+i=new_split:right
 keybind = cmd+shift+i=new_split:down
 keybind = global:opt+shift+t=new_window
-keybind = shift+enter=text:\n
