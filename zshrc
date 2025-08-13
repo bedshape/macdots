@@ -1,5 +1,5 @@
-# export PS1="%{%F{9}%}%~ %{%F{11}%}%% %{%f%}"
-export PS1="%{%F{9}%}%~ %{%F{11}%}> %{%f%}"
+# export PS1="%{%F{9}%}%~ %{%F{14}%}%% %{%f%}"
+export PS1="%{%F{13}%}%~ %{%F{14}%}> %{%f%}"
 # export RPROMPT="%{%F{13}%}[$SHELL]%{%f%}"
 export EDITOR="/opt/homebrew/bin/nvim"
 export PATH="/opt/homebrew/bin:$PATH"
