@@ -1,5 +1,5 @@
 # export PS1="%{%F{9}%}%~ %{%F{14}%}%% %{%f%}"
-export PS1="%{%F{13}%}%~ %{%F{14}%}> %{%f%}"
+export PS1="%{%F{14}%}%~ %{%F{13}%}> %{%f%}"
 # export RPROMPT="%{%F{13}%}[$SHELL]%{%f%}"
 export EDITOR="/opt/homebrew/bin/nvim"
 export PATH="/opt/homebrew/bin:$PATH"
@@ -33,13 +33,9 @@ alias fetch="fastfetch"
 alias sshdstart="sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist"
 alias sshdstop="sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist"
 alias brewup="brew update && brew upgrade && brew cleanup"
-alias brewin="brew install"
-alias brewre="brew uninstall"
-alias rccp="rclone copy -P"
-alias rclsd="rclone lsd"
-alias rcls="rclone ls"
 alias nmutt="neomutt"
 alias nmrc="nvim $HOME/.muttrc"
+alias lsblk="echo 'diskutil list' && diskutil list"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
