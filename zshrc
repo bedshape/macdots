@@ -20,19 +20,23 @@ zstyle ':completion:*:*:ssh:*' users ''
 hosts=(${(f)"$(awk '/^Host / {print $2}' ~/.ssh/config ~/.ssh/known_hosts 2>/dev/null)"})
 zstyle ':completion:*:*:ssh:*' hosts $hosts
 
+# basic aliases
+alias r="source $HOME/.zshrc && clear"
 alias ls="ls -GF"
 alias ll="ls -GFl"
 alias la="ls -GFa"
-alias lla="ls -GFla"
 alias nv="nvim"
-alias zshrc="nvim $HOME/.zshrc"
-alias nvcfg="nvim $HOME/.config/nvim/init.lua"
-alias ghcfg="nvim $HOME/.config/ghostty/config"
-alias r="source $HOME/.zshrc && clear"
 alias fetch="fastfetch" 
+alias nmutt="neomutt"
+alias brewup="brew update && brew upgrade && brew cleanup"
+alias lsblk="echo 'diskutil list' && diskutil list"
+
+# start sshd on mac
 alias sshdstart="sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist"
 alias sshdstop="sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist"
-alias brewup="brew update && brew upgrade && brew cleanup"
-alias nmutt="neomutt"
+
+# one word to edit config files 
+alias zshrc="nvim $HOME/.zshrc"
+alias ghcfg="nvim $HOME/.config/ghostty/config"
+alias nvcfg="nvim $HOME/.config/nvim/init.lua"
 alias nmrc="nvim $HOME/.muttrc"
-alias lsblk="echo 'diskutil list' && diskutil list"
